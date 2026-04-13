@@ -21,4 +21,11 @@ Aby zbudować obraz i nadać aplikacji konkretną wersję, należy użyć argume
 ```bash
 docker build --build-arg VERSION=1.2.4-stable -t lab5-app .
 
+2. Uruchominie kontenera
+
+docker run -d -p 8080:80 --name monitor-lab5 lab5-app
+
+3. Weryfikacja działania
+
+Otwarcie przegladarki i wpisanie adresu curl http://localhost:8080
 
